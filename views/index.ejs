@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+    
+    <body style="background: #24282B;">
+
+
+    <div id="head" style=" background-image: url('sale.png');
+    height: 120vh;
+    background-size: contain;
+    background-repeat: no-repeat;">
+    
+        <div  style="padding-top: 400px;
+        padding-left: 140px;">
+    <div class="form-floating mb-3" id="serch-form" style="max-width: 500px;">
+        <input  class="form-control" id="floatingInput" placeholder="ditto">
+        <label for="floatingInput">🔍</label>
+    </div>
+    <div id="Btn">
+        <button id="searchbtn" style="background-color: #FECC00;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        border-width: 0.3ch;
+        border-style: solid;
+        border-color: #19458B;">search 🔍</button>
+    </div>
+    </div>
+    
+    </div>
+    <div id="contant">
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="007.png" class="card-img-top" >
+                    <div class="card-body">
+                      <p class="card-text"><h3><%= pokemon1.name %></h3><br><%="order : "+ pokemon1.order %></p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="025.png" class="card-img-top" >
+                    <div class="card-body">
+                      <p class="card-text"><h3><%= pokemon2.name %></h3><br><%="order : "+ pokemon2.order %></p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="006.png" class="card-img-top" >
+                    <div class="card-body">
+                      <p class="card-text"><h3><%= pokemon3.name %></h3><br><%="order : "+ pokemon3.order %></p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>
+        <script>
+            function find(){
+                var poke=document.getElementById('floatingInput').value
+                
+            }
+        </script>    
+            
+            
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
